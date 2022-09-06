@@ -1,0 +1,51 @@
+<h1>Super Rad Net Art</h1>
+<h2>by Ray Thomas III</h2>
+  
+<style>
+
+  @keyframes body-pulse {
+    0% {
+      background-color: #518cca;
+    }
+    50% {
+      background-color: #7aecb4;
+    }
+    100%{
+      background-color: #518cca;
+    }
+   }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: body-pulse 5s infinite;
+  }
+  
+  @keyframes circle-pulse {
+    0% {
+      background-color: #7aecb4;
+    }
+    50% {
+      background-color: #518cca;
+    }
+    100% {
+      background-color: #7aecb4;
+    }
+  }
+  
+  #circle {
+    width: 50ww;
+    height: 50ww;
+    border-radius: 50%;
+    filter: blur(30px);
+    animation: circle-pulse 5s infinite;
+  }
+  
+</style>
+
+<body>
+  <div id="circle"></div>
+</body>
